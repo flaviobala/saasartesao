@@ -36,7 +36,6 @@ class AdminPanelProvider extends PanelProvider
                 'primary' => Color::Violet,
             ])
             ->brandName('SaaS Artesão')
-            ->locale('pt_BR')
             ->tenant(User::class)
             ->tenantRoutePrefix('artesao')
             ->defaultThemeMode(ThemeMode::Dark)

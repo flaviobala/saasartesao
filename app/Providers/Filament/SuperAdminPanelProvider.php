@@ -31,7 +31,6 @@ class SuperAdminPanelProvider extends PanelProvider
                 'primary' => Color::Rose,
             ])
             ->brandName('SaaS Artesão — Super Admin')
-            ->locale('pt_BR')
             ->defaultThemeMode(ThemeMode::Dark)
             ->discoverResources(in: app_path('Filament/SuperAdmin/Resources'), for: 'App\\Filament\\SuperAdmin\\Resources')
             ->discoverPages(in: app_path('Filament/SuperAdmin/Pages'), for: 'App\\Filament\\SuperAdmin\\Pages')
