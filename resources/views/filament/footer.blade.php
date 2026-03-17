@@ -1,39 +1,38 @@
 <footer style="
-    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);
-    border-top: 2px solid rgba(139, 92, 246, 0.4);
+    background-color: rgb(17, 17, 19);
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
     padding: 1.25rem 1.5rem;
     text-align: center;
     margin-top: auto;
-    box-shadow: 0 -4px 20px rgba(139, 92, 246, 0.15);
 ">
     <div style="max-width: 1200px; margin: 0 auto;">
         <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem 2rem; margin-bottom: 0.5rem;">
-            <span style="color: #c4b5fd; font-size: 0.8rem; display: flex; align-items: center; gap: 0.4rem;">
+            <span style="color: #9ca3af; font-size: 0.8rem; display: flex; align-items: center; gap: 0.4rem;">
                 <svg xmlns="http://www.w3.org/2000/svg" style="width:14px;height:14px;flex-shrink:0;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                 </svg>
-                <strong style="color: #e9d5ff;">Flavio Henrique</strong>&nbsp;— Desenvolvedor
+                <strong style="color: #e5e7eb;">Flavio Henrique</strong>&nbsp;— Desenvolvedor
             </span>
             <a href="https://wa.me/5582999730532" target="_blank" rel="noopener noreferrer"
-               style="color: #86efac; font-size: 0.8rem; text-decoration: none; display: flex; align-items: center; gap: 0.4rem; transition: color 0.2s;"
-               onmouseover="this.style.color='#4ade80'" onmouseout="this.style.color='#86efac'">
+               style="color: #9ca3af; font-size: 0.8rem; text-decoration: none; display: flex; align-items: center; gap: 0.4rem; transition: color 0.2s;"
+               onmouseover="this.style.color='#d1d5db'" onmouseout="this.style.color='#9ca3af'">
                 <svg xmlns="http://www.w3.org/2000/svg" style="width:14px;height:14px;flex-shrink:0;" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                 </svg>
                 (82) 99973-0532
             </a>
             <a href="mailto:flavioha@gmail.com"
-               style="color: #93c5fd; font-size: 0.8rem; text-decoration: none; display: flex; align-items: center; gap: 0.4rem;"
-               onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='#93c5fd'">
+               style="color: #9ca3af; font-size: 0.8rem; text-decoration: none; display: flex; align-items: center; gap: 0.4rem;"
+               onmouseover="this.style.color='#d1d5db'" onmouseout="this.style.color='#9ca3af'">
                 <svg xmlns="http://www.w3.org/2000/svg" style="width:14px;height:14px;flex-shrink:0;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 flavioha@gmail.com
             </a>
         </div>
-        <p style="color: rgba(167, 139, 250, 0.6); font-size: 0.72rem; margin: 0;">
+        <p style="color: rgba(156, 163, 175, 0.5); font-size: 0.72rem; margin: 0;">
             &copy; {{ date('Y') }} SaaS Artesão &mdash; Todos os direitos reservados.
-            Desenvolvido com <span style="color: #f87171;">&#10084;</span> por <strong style="color: #c4b5fd;">Flavio Henrique</strong>.
+            Desenvolvido com <span style="color: #f87171;">&#10084;</span> por <strong style="color: #d1d5db;">Flavio Henrique</strong>.
         </p>
     </div>
 </footer>
