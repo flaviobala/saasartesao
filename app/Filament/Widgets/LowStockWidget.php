@@ -10,7 +10,7 @@ use Filament\Widgets\TableWidget as BaseWidget;
 class LowStockWidget extends BaseWidget
 {
     protected static ?int $sort = 3;
-    protected int | string | array $columnSpan = 'full';
+    protected $columnSpan = 'full';
     protected static ?string $heading = 'Materiais com Estoque Baixo';
 
     public function table(Table $table): Table
