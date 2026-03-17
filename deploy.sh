@@ -8,6 +8,7 @@ set -e
 APP_DIR="/var/www/saasartesao"
 WEB_USER="www-data"
 DEPLOY_USER="flavioadm"
+PHP_BIN="php8.3"
 
 echo "🚀 Iniciando deploy..."
 
@@ -27,20 +28,20 @@ npm install --silent && npm run build
 
 # 4. Limpar caches
 echo "🧹 Limpando caches..."
-sudo -u "$WEB_USER" php artisan config:clear
-sudo -u "$WEB_USER" php artisan route:clear
-sudo -u "$WEB_USER" php artisan view:clear
-sudo -u "$WEB_USER" php artisan cache:clear
+sudo -u "$WEB_USER" "$PHP_BIN" artisan config:clear
+sudo -u "$WEB_USER" "$PHP_BIN" artisan route:clear
+sudo -u "$WEB_USER" "$PHP_BIN" artisan view:clear
+sudo -u "$WEB_USER" "$PHP_BIN" artisan cache:clear
 
 # 5. Rodar migrações
 echo "🗄️  Rodando migrações..."
-sudo -u "$WEB_USER" php artisan migrate --force
+sudo -u "$WEB_USER" "$PHP_BIN" artisan migrate --force
 
 # 6. Recriar caches otimizados
 echo "⚡ Recriando caches..."
-sudo -u "$WEB_USER" php artisan config:cache
-sudo -u "$WEB_USER" php artisan route:cache
-sudo -u "$WEB_USER" php artisan view:cache
+sudo -u "$WEB_USER" "$PHP_BIN" artisan config:cache
+sudo -u "$WEB_USER" "$PHP_BIN" artisan route:cache
+sudo -u "$WEB_USER" "$PHP_BIN" artisan view:cache
 
 # 7. Corrigir permissões
 echo "🔐 Corrigindo permissões..."
