@@ -32,6 +32,15 @@ class UserResource extends Resource
                     ->email()
                     ->required()
                     ->maxLength(255),
+                Forms\Components\TextInput::make('password')
+                    ->label('Senha')
+                    ->password()
+                    ->revealable()
+                    ->minLength(8)
+                    ->dehydrateStateUsing(fn ($state) => filled($state) ? bcrypt($state) : null)
+                    ->dehydrated(fn ($state) => filled($state))
+                    ->required(fn (string $operation): bool => $operation === 'create')
+                    ->helperText('Deixe em branco para manter a senha atual'),
                 Forms\Components\TextInput::make('phone')
                     ->label('Telefone')
                     ->maxLength(50),
