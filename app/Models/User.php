@@ -27,6 +27,7 @@ class User extends Authenticatable implements FilamentUser, HasTenants
         'craft_specialty',
         'hourly_rate',
         'avatar_url',
+        'is_super_admin',
     ];
 
     protected $hidden = [
@@ -40,11 +41,16 @@ class User extends Authenticatable implements FilamentUser, HasTenants
             'email_verified_at' => 'datetime',
             'password'          => 'hashed',
             'hourly_rate'       => 'decimal:2',
+            'is_super_admin'    => 'boolean',
         ];
     }
 
     public function canAccessPanel(Panel $panel): bool
     {
+        if ($panel->getId() === 'superadmin') {
+            return $this->is_super_admin === true;
+        }
+
         return true;
     }
 
