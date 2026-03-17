@@ -11,7 +11,7 @@ use Filament\Widgets\TableWidget as BaseWidget;
 class LatestUsersWidget extends BaseWidget
 {
     protected static ?int $sort = 2;
-    protected $columnSpan = 'full';
+    protected int | string | array $columnSpan = 'full';
     protected static ?string $heading = 'Clientes Recentes';
 
     public function table(Table $table): Table

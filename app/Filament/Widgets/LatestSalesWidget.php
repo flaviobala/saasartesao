@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Builder;
 class LatestSalesWidget extends BaseWidget
 {
     protected static ?int $sort = 2;
-    protected $columnSpan = 'full';
+    protected int | string | array $columnSpan = 'full';
     protected static ?string $heading = 'Últimas Vendas';
 
     public function table(Table $table): Table
